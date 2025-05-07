@@ -41,7 +41,7 @@ const Header = () => {
                 onClick={() => setIsSearchOpen(!isSearchOpen)}
                 className="focus:outline-none"
               >
-                <img src="/images/searchbar.jpg" alt="Search" className="h-6 w-6" />
+                <img src="/images/img_searchnormal.svg" alt="Search" className="h-6 w-6" />
               </button>
               <Link to="/wishlist">
                 <img src="/images/img_heart.svg" alt="Wishlist" className="h-6 w-6" />
