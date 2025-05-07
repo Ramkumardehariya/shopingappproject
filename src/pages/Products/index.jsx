@@ -10,7 +10,6 @@ const ProductCatalogPage = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [sortOption, setSortOption] = useState({ value: 'recommended', label: 'RECOMMENDED' });
   const [isFilterVisible, setIsFilterVisible] = useState(true);
-  const productsPerPage = 9;
   const [isSortOpen, setIsSortOpen] = useState(false);
   
   // Sort options
@@ -319,16 +318,6 @@ const ProductCatalogPage = () => {
                 onAddToWishlist={handleAddToWishlist} 
               />
               
-              {/* Pagination */}
-              {/* {filteredProducts.length > productsPerPage && (
-                <div className="mt-12">
-                  <Pagination 
-                    currentPage={currentPage}
-                    totalPages={Math.ceil(filteredProducts.length / productsPerPage)}
-                    onPageChange={handlePageChange}
-                  />
-                </div>
-              )} */}
             </div>
           </div>
         </section>
